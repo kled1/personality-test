@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #000000b2;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+#quiz {
+    font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+    width: 1000px;
+    margin: 15em auto;
+}
+
+#questions {
+    font-size: 1.3em;
+}
+
+#answers {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 77.5px;
+}
+
+#answers li {
+    float: left;
+    margin: 0px 15px 15px 0px;
+    width: 47%;
+    height: 85px;
+    position: relative;
+}
+
+#answers label,
+#answers input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#answers input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#answers input[type="radio"]:checked+label {
+    opacity: 1;
+    background: white;
+    color: #000000b2;
+}
+
+#answers label {
+    padding: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    z-index: 90;
+    opacity: 0.7;
+    transition: opacity 0.2s linear;
+}
+
+#answers label:hover {
+    opacity: 1;
+}
+
+.button , a{
+    border: 2px solid #fff;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: inline-block;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#results {
+    display: none;
+}
+
+#error {
+    display: none;
+}
+
+#results {
+    width: 1000px;
+    margin: 15em auto;
+}
